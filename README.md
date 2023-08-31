@@ -4,11 +4,14 @@ Password Gnerator is designed so the user will be able to randomly generate a pa
 
 
 
+
+
+
+
 ## Usage:
 Screenshot 
 
 
-![Screenshot 2023-08-31 134726](https://github.com/Neetk962/Password-Generator-M3/assets/131637944/1d571fd2-3032-4c93-bd48-0c8d43f394df)
 
 
 User website, navigate to the website and view my portfolio. 
