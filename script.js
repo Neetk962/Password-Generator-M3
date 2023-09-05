@@ -1,15 +1,17 @@
 
 
-// adding arrays 
+
+
+//used if statements, used for loops to loop password source
+
+function generatePassword() {
+  // adding arrays 
 var passwordsource = ""
 var finalpassword = ""
 var lowercasealphabet ="abcdefghijklmnopqrstuvwxyz"
 var specialcharacters="!@#$%^&*"
 var uppercasealphabet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-//used if statements, used for loops to loop password source
-
-function generatePassword() {
   var userChoice = parseInt(window.prompt("Enter a number between 8-128 characters"));
   if (userChoice>=8 && userChoice <=128) {
     var userChoice2 = window.confirm("include lowercase, uppercase, and special characters")
