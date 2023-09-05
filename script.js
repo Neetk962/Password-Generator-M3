@@ -11,7 +11,7 @@ var uppercasealphabet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 function generatePassword() {
   var userChoice = parseInt(window.prompt("Enter a number between 8-128 characters"));
-  if (userChoice>8 && userChoice <128) {
+  if (userChoice>=8 && userChoice <=128) {
     var userChoice2 = window.confirm("include lowercase, uppercase, and special characters")
     passwordsource+=lowercasealphabet
 
@@ -39,7 +39,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  passwordText.value=""
   passwordText.value = password;
 
 }
