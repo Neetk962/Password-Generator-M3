@@ -11,18 +11,34 @@ var finalpassword = ""
 var lowercasealphabet ="abcdefghijklmnopqrstuvwxyz"
 var specialcharacters="!@#$%^&*"
 var uppercasealphabet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var numbers = "123456789"
 
   var userChoice = parseInt(window.prompt("Enter a number between 8-128 characters"));
   if (userChoice>=8 && userChoice <=128) {
-    var userChoice2 = window.confirm("include lowercase, uppercase, and special characters")
-    passwordsource+=lowercasealphabet
+    var userlowercase = window.confirm("lowercase letters")
+    var useruppercase = window.confirm("uppercase letters")
+    var userspecialcharacters = window.confirm("special characters")
+    var usernumbers = window.confirm("include numbers")
 
-    if (userChoice2) {
-    passwordsource+=specialcharacters
-    passwordsource+=uppercasealphabet
-      
-    // Used math.random to numbers for final password 
+    if (userlowercase) {
+      passwordsource+=lowercasealphabet
+
     }
+    if (useruppercase) {
+      passwordsource+=uppercasealphabet
+   
+      }
+      if (userspecialcharacters) {
+        passwordsource+=specialcharacters
+
+        }
+
+      if (usernumbers) {
+        passwordsource+=numbers
+
+       // Used math.random to numbers for final password 
+        }
+
     for (let index = 0; index < userChoice; index++) {
       finalpassword+= passwordsource.charAt(Math.floor(Math.random()*passwordsource.length))
     }
